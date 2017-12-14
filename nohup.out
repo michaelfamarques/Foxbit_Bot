@@ -1,0 +1,37 @@
+/root/Foxbit_Bot/index.js:118
+<<<<<<< HEAD
+^^
+SyntaxError: Unexpected token <<
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:528:28)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.runMain (module.js:590:10)
+    at run (bootstrap_node.js:394:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:509:3
+cDescription: Buy and sell automatic foxbit exchange
+Version: 2.0.0
+*******************************************************
+Connected BlinkTradeWS
+[93m[4:01:28][0m [92mFoxbit Balance: 2.66 BRL | 0.000001 BTC[0m
+[93m[4:02:12][0m OB:NEW_ORDER:buy:3
+BUY.Check4: false
+[93m[4:02:12][0m OB:DELETE_ORDER:sell:133
+/root/Foxbit_Bot/index.js:228
+    for (i = 0 ; i < variables.orderbooktemp.asks.length ;i++)
+           ^
+
+ReferenceError: i is not defined
+    at EventEmitter.onOrderBookDeleteOrder (/root/Foxbit_Bot/index.js:228:12)
+    at EventEmitter.emit (/root/Foxbit_Bot/node_modules/eventemitter2/lib/eventemitter2.js:358:22)
+    at /root/Foxbit_Bot/node_modules/blinktrade/lib/ws.js:274:44
+    at Array.map (native)
+    at Object.subscribeEvent [as callback] (/root/Foxbit_Bot/node_modules/blinktrade/lib/ws.js:255:25)
+    at BlinkTradeWS.dispatchPromise (/root/Foxbit_Bot/node_modules/blinktrade/lib/wsTransport.js:177:85)
+    at BlinkTradeWS.onMessage (/root/Foxbit_Bot/node_modules/blinktrade/lib/wsTransport.js:170:12)
+    at WebSocket.onMessage (/root/Foxbit_Bot/node_modules/ws/lib/WebSocket.js:442:14)
+    at emitTwo (events.js:106:13)
+    at WebSocket.emit (events.js:191:7)
